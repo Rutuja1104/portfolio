@@ -1,0 +1,31 @@
+.circular-progress {
+    position: relative;
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+  }
+  
+  .progress-ring {
+
+    width: 120%;
+    height: 120%;
+  }
+  
+  .progress-ring-circle {
+    stroke: #e6e6e6; /* Adjust color of the circle */
+  }
+  
+  .progress-ring-progress {
+    stroke: #007bff; /* Adjust color of the progress */
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.3s;
+  }
+  
+  .progress-text {
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 24px; /* Adjust font size */
+    color: #333; /* Adjust color of the text */
+  }
+  

@@ -1,0 +1,15 @@
+.HomeContainer{
+    margin-top: 15%;
+    margin: 2%;
+    background-color:#f3f3f3;
+      border-radius: 1%;
+  }
+  
+  .DataContainer{
+    background-color: rgb(243 245 247);
+    padding: 2%;
+    border-radius: 2%;
+    margin-bottom: 10%;
+    /* margin: 2%; */
+  }
+  
