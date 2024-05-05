@@ -8,6 +8,7 @@ import { SiGmail } from "react-icons/si";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import './Home.css'
+import About from "./About";
 const Home = () => {
   return (
     <>
@@ -58,6 +59,8 @@ const Home = () => {
       </Col>
     </Row>
     <Skills/>
+    <About/>
+    <Projects/>
     </>
   );
 };
