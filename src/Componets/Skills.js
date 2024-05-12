@@ -2,17 +2,21 @@ import React, { useEffect, useState } from "react";
 import AnimatedProgressBar from "./ProgressBar";
 import CircularProgressBar from "./CircularProgressBar";
 import { Col, FormLabel, Row } from "react-bootstrap";
+import TrackVisibility from 'react-on-screen';
+import 'animate.css';
 
 const Skills = () => {
   return (
     <div className="SkillsContainer justify-content-around">
       <h1 className="text-center text-decoration-underline mb-4">Skills</h1>
-      <Row >
-        <Col className="progressContainer">
+      <TrackVisibility>
+      {({ isVisible }) =>
+      <Row className={isVisible ? "animate__animated animate__fadeIn": ""} >
+        <Col className={isVisible ? "progressContainer" :""}>
         <h3 className="text-center text-decoration-underline mb-0">
                 Technical Skills
               </h3>
-          <div class="p-4 justify-content-around" style={{}}>
+          <div class="p-4 justify-content-around">
             <div class="p-2 bd-highlight">
               <h4 className="mb-1">React</h4>
               <AnimatedProgressBar value={80} animationDuration={10} />
@@ -51,7 +55,7 @@ const Skills = () => {
             </div>
           </div>
         </Col>
-        <Col className="progressContainer">
+        <Col className={isVisible ? "progressContainer" :""}>
           <div class="d-flex flex-row bd-highlight mb-3 justify-content-around">
             <Row className="mx-auto">
               <h3 className="text-center text-decoration-underline mb-4">
@@ -81,6 +85,8 @@ const Skills = () => {
           </div>
         </Col>
       </Row>
+       }
+        </TrackVisibility>
     </div>
   );
 };

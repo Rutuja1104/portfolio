@@ -9,6 +9,7 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import './Home.css'
 import About from "./About";
+import Contact from "./Contact";
 const Home = () => {
   return (
     <>
@@ -59,8 +60,9 @@ const Home = () => {
       </Col>
     </Row>
     <Skills/>
-    <About/>
     <Projects/>
+    <About/>
+    <Contact/>
     </>
   );
 };
