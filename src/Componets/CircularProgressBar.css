@@ -1,31 +1,71 @@
 .circular-progress {
-    position: relative;
-    width: 200px; /* Adjust width as needed */
-    height: 200px; /* Adjust height as needed */
-  }
-  
-  .progress-ring {
+  position: relative;
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+}
 
-    width: 120%;
-    height: 120%;
+@media screen and (max-width: 300px){
+  .circular-progress {
+      width: 150px; /* Adjust width as needed */
+      height: 150px; /* Adjust height as needed */
+  }
+
+  .progress-ring {
+      width: 50%;
+      height: 50%;
+  }
+
+  .progress-text {
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      transform: translate(-25%, -25%);
+      font-size: 20px; /* Adjust font size */
+      color: #333; /* Adjust color of the text */
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px){
+  .circular-progress {
+      width: 150px; 
+      height: 150px; 
   }
   
-  .progress-ring-circle {
-    stroke: #e6e6e6; /* Adjust color of the circle */
+  .progress-text {
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      transform: translate(-25%, -25%);
+      font-size: 20px; /* Adjust font size */
+      color: #333; /* Adjust color of the text */
   }
-  
-  .progress-ring-progress {
-    stroke: #007bff; /* Adjust color of the progress */
-    stroke-linecap: round;
-    transition: stroke-dashoffset 0.3s;
-  }
-  
+}
+
+.progress-ring {
+  width: 120%;
+  height: 120%;
+}
+
+.progress-ring-circle {
+  stroke: #e6e6e6; /* Adjust color of the circle */
+}
+
+.progress-ring-progress {
+  stroke: #007bff; /* Adjust color of the progress */
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.3s;
+}
+
+@media screen and (min-width: 500px) and (max-width: 2000px){
   .progress-text {
     position: absolute;
     top: 55%;
     left: 55%;
     transform: translate(-50%, -50%);
-    font-size: 24px; /* Adjust font size */
-    color: #333; /* Adjust color of the text */
+    font-size: 24px; 
+    color: #333; 
   }
   
+
+}
+

@@ -44,7 +44,7 @@ const Projects = () => {
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
+              <div className={isVisible && window.innerWidth>400 ? "animate__animated animate__fadeIn": ""}>
                 <h2 className="text-center text-decoration-underline mb-4">Projects</h2>
                 <Row className="d-flex justify-content-around">
                         {
