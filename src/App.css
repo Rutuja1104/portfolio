@@ -83,29 +83,58 @@
 
 }
 
-.home-img {
-  flex: 0 0 40%;
-  max-width: 40%;
-  text-align: center;
-  position: relative;
-  animation-timing-function: ease-in-out;
-  animation-name: homeImg;
-  animation-duration: 2.6s;
-  animation-iteration-count: infinite;
-  min-width: 40%;
+
+@media screen and (min-width: 300px) and (max-width: 500px){
+  .home-img {
+    flex: 0 0 40%;
+    max-width: 30%;
+    text-align: center;
+    position: relative;
+    animation-timing-function: ease-in-out;
+    animation-name: homeImg;
+    animation-duration: 2.6s;
+    animation-iteration-count: infinite;
+    min-width: 30%;
+  }
+  .picImg{
+    height: 200px;
+    /* width: 80px; */
+    object-fit: cover;
+    border-radius: 8px;
+    margin: auto;
+    animation-timing-function: ease-in-out;
+    animation-name: homeImg;
+    animation-duration: 2.6s;
+    animation-iteration-count: infinite;
+    /* box-shadow: white 0px 0px 12px, red 0px 0px 12px; */
+  } 
 }
-.picImg{
-  height: 400px;
-  /* width: 80px; */
-  object-fit: cover;
-  border-radius: 8px;
-  margin: auto;
-  animation-timing-function: ease-in-out;
-  animation-name: homeImg;
-  animation-duration: 2.6s;
-  animation-iteration-count: infinite;
-  /* box-shadow: white 0px 0px 12px, red 0px 0px 12px; */
+@media screen and (min-width: 500px) and (max-width: 2000px){
+  .home-img {
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+    animation-timing-function: ease-in-out;
+    animation-name: homeImg;
+    animation-duration: 2.6s;
+    animation-iteration-count: infinite;
+    min-width: 40%;
+  }
+  .picImg{
+    height: 400px;
+    /* width: 80px; */
+    object-fit: cover;
+    border-radius: 8px;
+    margin: auto;
+    animation-timing-function: ease-in-out;
+    animation-name: homeImg;
+    animation-duration: 2.6s;
+    animation-iteration-count: infinite;
+    /* box-shadow: white 0px 0px 12px, red 0px 0px 12px; */
+  }
 }
+
 @keyframes homeImg {
   0% {
       transform: translateY(0);
@@ -397,6 +426,9 @@ main{
 }
 .project .nav.nav-pills .nav-item {
   width: 33.33333%;
+}
+.NavContainer{
+  width: 100%;
 }
 .project .nav.nav-pills .nav-link {
   background-color: transparent;

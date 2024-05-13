@@ -7,7 +7,7 @@ import { Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
 const Layout = () => {
   return (
     <div className="text-dark">
-      <Navbar bg="dark" data-bs-theme="dark" >
+      <Navbar bg="dark" data-bs-theme="dark"  className="NavContainer">
       <Nav className="me-auto">
       <Container>
           <Nav className="me-auto">
