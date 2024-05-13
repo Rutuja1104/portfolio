@@ -64,21 +64,21 @@ const Skills = () => {
               <Col className="align-items-center" style={{display:'flex', justifyContent:"space-around"}}>
                 <div class="p-2 bd-highlight mb-4">
                   <h4 className="mb-4">Creativity</h4>{" "}
-                  <CircularProgressBar value={55} animationDuration={10} />
+                  <CircularProgressBar value={80} animationDuration={10} />
                 </div>
                 <div class="p-2 bd-highlight mb-4">
                   <h4 className="mb-4">Communications</h4>
-                  <CircularProgressBar value={55} animationDuration={10} />
+                  <CircularProgressBar value={70} animationDuration={10} />
                 </div>
               </Col>
               <Col className="align-items-center mb-4" style={{display:'flex', justifyContent:"space-around"}}>
                 <div class="p-2 bd-highlight">
                   <h4 className="mb-4">Problem Solving</h4>
-                  <CircularProgressBar value={55} animationDuration={10} />
+                  <CircularProgressBar value={60} animationDuration={10} />
                 </div>
                 <div class="p-2 bd-highlight mb-4">
                   <h4 className="mb-4">Team Work</h4>
-                  <CircularProgressBar value={55} animationDuration={10} />
+                  <CircularProgressBar value={90} animationDuration={10} />
                 </div>
               </Col>
             </Row>
