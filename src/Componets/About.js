@@ -67,7 +67,7 @@ const About = () => {
               <h3>Thinkitive Technologies Software Engineer E2</h3>
 
               <p>
-                Oct 2023 - Present (1 yr 8 mos) Pune, Maharashtra, Proficient in
+                Oct 2024 - Nov 2024  Pune, Maharashtra, Proficient in
                 building dynamic and responsive web applications using React.js.
                 Experienced in establishing and managing WebSocket connections,
                 enhancing real-time communication features in applications.
